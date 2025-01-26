@@ -1,4 +1,5 @@
 import 'package:diet/features/authentication/screens/onboarding%20Screen/onboarding_pages.dart';
+import 'package:diet/utils/constants/images.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,7 +15,7 @@ class SplashScreen extends StatelessWidget {
 
     return Scaffold(
       body: Center(
-        child: Image.asset('assets/logo.png'), // Replace with your logo path
+        child: Image.asset(TImages.appLogo,), // Replace with your logo path
       ),
     );
   }

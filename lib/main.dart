@@ -1,4 +1,5 @@
 import 'package:diet/features/authentication/screens/splash/splash.dart';
+import 'package:diet/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -11,7 +12,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return GetMaterialApp(
+      theme: ThemeData(scaffoldBackgroundColor: TColors.primary),
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );
